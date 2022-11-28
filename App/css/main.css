@@ -13,6 +13,11 @@ body {
   text-align: center;
 }
 
+.main {
+  display: block;
+  margin: 0 auto;
+}
+
 .splash {
   background-color: rgb(33, 78, 74);
   height: 100vh;
@@ -46,15 +51,22 @@ button {
   display: none;
 }
 
+.centered {
+  display: block;
+  margin: 0 auto;
+}
+
 .filters {
+  width: 20rem;
+  max-width: 25rem;
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  justify-content: center;
+  overflow: auto;
 }
 
 .filter img{
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;;
 }
