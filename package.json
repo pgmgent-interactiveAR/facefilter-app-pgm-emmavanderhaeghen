@@ -1,0 +1,26 @@
+{
+  "name": "facefilter-app-pgm-emmavanderhaeghen",
+  "version": "1.0.0",
+  "description": "This is a facefilter application. Try it out!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgmgent-interactiveAR/facefilter-app-pgm-emmavanderhaeghen.git"
+  },
+  "keywords": [
+    "AR",
+    "Facefilter"
+  ],
+  "author": "Emma Van der Haeghen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgmgent-interactiveAR/facefilter-app-pgm-emmavanderhaeghen/issues"
+  },
+  "homepage": "https://github.com/pgmgent-interactiveAR/facefilter-app-pgm-emmavanderhaeghen#readme",
+  "dependencies": {
+    "openssl": "^2.0.0"
+  }
+}
