@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -56,6 +58,11 @@ button {
   margin: 0 auto;
 }
 
+.controls {
+  background: rgb(33,78,74);
+background: linear-gradient(180deg, rgba(33,78,74,1) 0%, rgba(255,255,255,0) 100%);
+}
+
 .filters {
   width: 20rem;
   max-width: 25rem;
@@ -68,5 +75,6 @@ button {
 .filter img{
   width: 4rem;
   height: 4rem;
+  border: 4px solid white;
   border-radius: 50%;;
 }
