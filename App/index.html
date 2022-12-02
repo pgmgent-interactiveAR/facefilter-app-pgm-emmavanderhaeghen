@@ -9,16 +9,16 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <div class="hidden splash" id="splash-screen">
+    <div class="splash splash-screen">
         <h1>Facefilter App</h1>
         <p>Try out multiple personalities!</p>
-        <button class="btn" id="splash-btn">Check it out!</button>
+        <button class="btn splash-btn">Check it out!</button>
     </div>
     
-    <div class="main" id="main-screen">
+    <div class="main hidden main-screen">
         <div class="controls">
             <h1>Choose your filter</h1>
             <div class="centered filters">
@@ -75,7 +75,12 @@
 
             <a-entity 
             mindar-face-target="anchorIndex: 1">
-                <a-gltf-model rotation="-20 0 0" position="0 0 -.1" scale="6 6 6" src="#nardGlasses"></a-gltf-model>
+                <a-gltf-model 
+                rotation="-20 0 0" 
+                position="0 0 -.1" 
+                scale="6 6 6">
+                </a-gltf-model>
+
                 <a-sphere 
                 color="green" 
                 radius="0.1">

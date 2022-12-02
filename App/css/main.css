@@ -60,7 +60,7 @@ button {
 
 .controls {
   background: rgb(33,78,74);
-background: linear-gradient(180deg, rgba(33,78,74,1) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(180deg, rgba(33,78,74,1) 0%, rgba(255,255,255,0) 100%);
 }
 
 .filters {
