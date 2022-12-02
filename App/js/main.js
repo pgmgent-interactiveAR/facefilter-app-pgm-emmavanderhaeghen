@@ -23,43 +23,8 @@ const App = {
     this.splashBtn.addEventListener('click', () => {
       this.splashScreen.classList.add("hidden");
       this.mainScreen.classList.remove("hidden");
-      console.log(test);
     });
-
   },
 };
 
 App.init();
-
-// this.$splashBtn.addEventListener("click", this.hideSplashScreen.bind(this));
-
-// this.$splashBtn('click').addEventListener('click', () => {
-//   this.$splashScreen.classList.add("hidden");
-//   this.$mainScreen.classList.remove("hidden");
-//   console.log(test);
-// });
-
-
-
-  // constructor() {
-  //     this.registerComponents();
-  // }
-  // registerComponents() {
-  //     this.splashScreen = document.querySelector("#splash-screen");
-  //     this.splashBtn = document.querySelector("#splash-btn");
-  //     this.mainScreen = document.querySelector("#main-screen");
-
-  //     this.registerEventListeners();
-
-  // }
-  // registerEventListeners() {
-  //   // this.splashButton
-  //   // set event listener for the button
-  //   // this.splashBtn.addEventListener("click", this.hideSplashScreen.bind(this));
-
-  //   // add classname hidden on splash screen when the button is clicked
-  //   this.splashBtn.addEventListener("click", () => {
-  //     this.splashScreen.classList.add("hidden");
-  //     this.mainScreen.classList.remove("hidden");
-  //     console.log(test);
-  //   });
