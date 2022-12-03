@@ -5,6 +5,7 @@
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-face-aframe.prod.js"></script>
     <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
     <body>
@@ -28,22 +29,27 @@
                 <a-assets>
                     <a-asset-item 
                     id="cowboy_hat" 
-                    src="assets/cowboy-hat.glb">
+                    src="assets//cowboy-hat.glb">
                     </a-asset-item> 
 
                     <a-asset-item 
                     id="nerd_glasses" 
-                    src="assets/nerd-glasses.glb">
+                    src="assets/models/nerd-glasses.glb">
                     </a-asset-item> 
 
                     <a-asset-item 
                     id="headModel" 
-                    src="assets/headOccluder.glb">
+                    src="assets/models/headOccluder.glb">
                     </a-asset-item>
 
                     <a-asset-item 
                     id="mustache" 
-                    src="assets/mustache.glb">
+                    src="assets/models/mustache.glb">
+                    </a-asset-item>
+
+                    <a-asset-item 
+                    id="bow" 
+                    src="assets/models/bow.glb">
                     </a-asset-item>
                 </a-assets>
 
@@ -55,7 +61,8 @@
                 <a-entity 
                 mindar-face-target="anchorIndex: 1">
                     <a-gltf-model 
-                        mindar-face-occluder position="0 -0.3 -.2"
+                        mindar-face-occluder 
+                        position="0 -0.3 -.2"
                         rotation="0 0 0" 
                         scale="0.08 0.08 0.08" 
                         src="#headModel">
@@ -66,12 +73,11 @@
                 mindar-face-target="anchorIndex: 1">
                     <a-gltf-model 
                         rotation="-20 0 0" 
-                        position="0 .1 -.12"
+                        position="0 .05 -.12"
                         scale="1.2 1.2 1.2" 
                         src="#nerd_glasses">
                     </a-gltf-model>
                 </a-entity>
-                
                 
                 <a-entity 
                 mindar-face-target="anchorIndex: 164">
@@ -94,42 +100,42 @@
                     </a-gltf-model>
                 </a-entity>
 
-                <!-- <a-entity 
+                <a-entity 
                 mindar-face-target="anchorIndex: 1">
-                    <a-sphere 
-                        color="green" 
-                        radius="0.1">
-                    </a-sphere>
-                </a-entity> -->
+                    <a-gltf-model 
+                        rotation="0 0 0" 
+                        position="0 0 0"
+                        scale="2 2 2" 
+                        src="#bow">
+                    </a-gltf-model>
+                </a-entity>
+
+                <!-- 
+                    This is a green dot on the screen that shows where the camera is looking.
+                    <a-entity 
+                    mindar-face-target="anchorIndex: 1">
+                        <a-sphere 
+                            color="green" 
+                            radius="0.1">
+                        </a-sphere>
+                    </a-entity> 
+                -->
             </a-scene>
             
             <div class="controls">
-                <h1>Choose your filter</h1>
+                <h2>Choose your filter</h2>
                 <div class="centered filters">
                     <div class="filter" id="filter-1">
-                        <img src="https://images.free3d.com/imgd/l41/743941.jpg" alt="filter-1">
+                        <img src="assets/images/cowboy-hat.png" alt="filter-1">
                     </div>
                     <div class="filter" id="filter-2">
-                        <img src="https://images.free3d.com/imgd/l61/1268461.jpg" alt="filter-2">
+                        <img src="https://images.free3d.com/imgd/l41/743941.jpg" alt="filter-2">
                     </div>
                     <div class="filter" id="filter-3">
-                        <img src="https://images.free3d.com/imgd/l23/820423.jpg" alt="filter-3">
+                        <img src="https://images.free3d.com/imgd/l1/1251301.jpg" alt="filter-3">
                     </div>
                     <div class="filter" id="filter-4">
-                        <img src="https://images.free3d.com/imgd/l31/1094831.jpg" alt="filter-4">
-                    </div>
-                    <div class="filter" id="filter-5">
-                        <img src="https://images.free3d.com/imgd/l53/764353.jpg" alt="filter-5">
-                    </div>
-                    
-                    <div class="filter" id="filter-2">
-                        <img src="https://images.free3d.com/imgd/l61/1268461.jpg" alt="filter-2">
-                    </div>
-                    <div class="filter" id="filter-3">
-                        <img src="https://images.free3d.com/imgd/l23/820423.jpg" alt="filter-3">
-                    </div>
-                    <div class="filter" id="filter-4">
-                        <img src="https://images.free3d.com/imgd/l31/1094831.jpg" alt="filter-4">
+                        <img src="assets/images/mustache.png" alt="filter-4">
                     </div>
                     <div class="filter" id="filter-5">
                         <img src="https://images.free3d.com/imgd/l53/764353.jpg" alt="filter-5">
@@ -139,3 +145,4 @@
         </div>
     </body>
 </html>
+
