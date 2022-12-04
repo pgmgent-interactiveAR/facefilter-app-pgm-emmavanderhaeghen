@@ -75,7 +75,19 @@
                         rotation="-20 0 0" 
                         position="0 .05 -.12"
                         scale="1.2 1.2 1.2" 
-                        src="#nerd_glasses">
+                        src="#nerd_glasses"
+                        class="model-1 hidden">
+                    </a-gltf-model>
+                </a-entity>
+
+                <a-entity 
+                mindar-face-target="anchorIndex: 1">
+                    <a-gltf-model 
+                        rotation="-20 0 0" 
+                        position="0 .05 -.12"
+                        scale="1.2 1.2 1.2" 
+                        src="#silly_glasses"
+                        class="model-2 hidden">
                     </a-gltf-model>
                 </a-entity>
                 
@@ -86,7 +98,7 @@
                         position="0 -.13 0" 
                         scale="1.2 1.2 1.2" 
                         src="#mustache" 
-                        gltf-model="">
+                        class="model-3 hidden">
                     </a-gltf-model>
                 </a-entity>
 
@@ -96,7 +108,8 @@
                         rotation="-9 0 0" 
                         position="-.05 .3 -1.4"
                         scale="2 2 2" 
-                        src="#cowboy_hat">
+                        src="#cowboy_hat"
+                        class="model-4 hidden">
                     </a-gltf-model>
                 </a-entity>
 
@@ -106,7 +119,8 @@
                         rotation="0 0 0" 
                         position="0 0 0"
                         scale="2 2 2" 
-                        src="#bow">
+                        src="#bow"
+                        class="model-5 hidden">
                     </a-gltf-model>
                 </a-entity>
 
@@ -125,21 +139,21 @@
             <div class="controls">
                 <h2>Choose your filter</h2>
                 <div class="centered filters">
-                    <div class="filter" id="filter-1">
+                    <button class="filter filter-1" type="button" value="off" id="onoff">
                         <img src="assets/images/cowboy-hat.png" alt="filter-1">
-                    </div>
-                    <div class="filter" id="filter-2">
+                    </button>
+                    <button class="filter filter-2" type="button" value="off" id="onoff">
                         <img src="https://images.free3d.com/imgd/l41/743941.jpg" alt="filter-2">
-                    </div>
-                    <div class="filter" id="filter-3">
+                    </button>
+                    <button class="filter filter-3" type="button" value="off" id="onoff">
                         <img src="https://images.free3d.com/imgd/l1/1251301.jpg" alt="filter-3">
-                    </div>
-                    <div class="filter" id="filter-4">
+                    </button>
+                    <button class="filter filter-4" type="button" value="off" id="onoff">
                         <img src="assets/images/mustache.png" alt="filter-4">
-                    </div>
-                    <div class="filter" id="filter-5">
-                        <img src="https://images.free3d.com/imgd/l53/764353.jpg" alt="filter-5">
-                    </div>
+                    </button>
+                    <button class="filter filter-5" type="button" value="off" id="onoff">
+                        <img src="https://images.free3d.com/imgd/l31/1094831.jpg" alt="filter-5">
+                    </button>
                 </div>
             </div>
         </div>
