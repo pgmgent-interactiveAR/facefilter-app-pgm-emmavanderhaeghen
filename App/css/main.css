@@ -43,6 +43,12 @@ p {
 }
 
 button {
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+  cursor: pointer;
+}
+
+.btn {
   font-family: 'Poppins';
   color: white;
   background-color: var(--accent);
