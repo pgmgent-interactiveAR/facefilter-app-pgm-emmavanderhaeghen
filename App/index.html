@@ -11,11 +11,31 @@
     <body>
         <div class="splash splash-screen">
             <h1>Facefilter App</h1>
-            <p>Try out multiple personalities!</p>
+            <p>Have you always wanted to be someone else for a minute? <br>
+                Try out multiple personalities and styles!</p>
+            <p class="bold-text">Click on a filter and see who you can become!</p>
             <button class="btn splash-btn">Check it out!</button>
-        </div>
-        
-        <div class="main hidden main-screen">
+        </div>  
+            <div class="controls">
+                <h2>Choose your filter</h2>
+                <div class="centered filters">
+                    <button class="filter filter-1" type="button" data-id="1" data-model="hat">
+                        <img src="assets/images/cowboy-hat.png" alt="filter-1">
+                    </button>
+                    <button class="filter filter-2" type="button" data-id="2" data-model="nerd_glasses">
+                        <img src="https://images.free3d.com/imgd/l41/743941.jpg" alt="filter-2">
+                    </button>
+                    <button class="filter filter-3" type="button" data-id="3" data-model="bow">
+                        <img src="https://images.free3d.com/imgd/l1/1251301.jpg" alt="filter-3">
+                    </button>
+                    <button class="filter filter-4" type="button" data-id="4" data-model="mustache">
+                        <img src="assets/images/mustache.png" alt="filter-4">
+                    </button>
+                    <button class="filter filter-5" type="button" data-id="5" data-model="silly_glasses">
+                        <img src="https://images.free3d.com/imgd/l31/1094831.jpg" alt="filter-5">
+                    </button>
+                </div>
+            </div>
 
             <a-scene 
             mindar-face 
@@ -23,7 +43,8 @@
             color-space="sRGB" 
             renderer="colorManagement: true, physicallyCorrectLights" 
             vr-mode-ui="enabled: false" 
-            device-orientation-permission-ui="enabled: false">
+            device-orientation-permission-ui="enabled: false"
+            >
 
                 <a-assets>
                     <a-asset-item 
@@ -84,7 +105,7 @@
                         class="model-2">
                     </a-gltf-model>
                 </a-entity>
-2
+
                 <a-entity 
                 mindar-face-target="anchorIndex: 1">
                     <a-gltf-model 
@@ -114,7 +135,7 @@
                     <a-gltf-model 
                         visible="false"
                         rotation="-9 0 0" 
-                        position="-.05 .3 -1.4"
+                        position="-.05 .3 -1.2"
                         scale="2 2 2" 
                         src="#cowboy_hat"
                         class="model-1">
@@ -132,40 +153,7 @@
                         class="model-3">
                     </a-gltf-model>
                 </a-entity>
-
-                <!-- 
-                    This is a green dot on the screen that shows where the camera is looking.
-                    <a-entity 
-                    mindar-face-target="anchorIndex: 1">
-                        <a-sphere 
-                            color="green" 
-                            radius="0.1">
-                        </a-sphere>
-                    </a-entity> 
-                -->
             </a-scene>
-            
-            <div class="controls">
-                <h2>Choose your filter</h2>
-                <div class="centered filters">
-                    <button class="filter filter-1" type="button" value="off" id="onoff">
-                        <img src="assets/images/cowboy-hat.png" alt="filter-1">
-                    </button>
-                    <button class="filter filter-2" type="button" value="off" id="onoff">
-                        <img src="https://images.free3d.com/imgd/l41/743941.jpg" alt="filter-2">
-                    </button>
-                    <button class="filter filter-3" type="button" value="off" id="onoff">
-                        <img src="https://images.free3d.com/imgd/l1/1251301.jpg" alt="filter-3">
-                    </button>
-                    <button class="filter filter-4" type="button" value="off" id="onoff">
-                        <img src="assets/images/mustache.png" alt="filter-4">
-                    </button>
-                    <button class="filter filter-5" type="button" value="off" id="onoff">
-                        <img src="https://images.free3d.com/imgd/l31/1094831.jpg" alt="filter-5">
-                    </button>
-                </div>
-            </div>
-        </div>
     </body>
 </html>
 
