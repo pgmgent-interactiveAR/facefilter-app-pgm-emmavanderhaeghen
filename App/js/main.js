@@ -2,15 +2,15 @@ const App = {
   init() {
     this.cacheElements();
     this.addEventListener();
-    this.onoff();
+    this.toggle();
   },
 
   cacheElements() {
-    // console.log('cacheElements');
-
     this.splashScreen = document.querySelector(".splash-screen");
     this.splashBtn = document.querySelector(".splash-btn");
     this.mainScreen = document.querySelector(".main-screen");
+
+    // this.toggle = document.querySelectorAll("#toggle");
 
     this.model1 = document.querySelector(".model-1");
     this.model2 = document.querySelector(".model-2");
@@ -26,8 +26,6 @@ const App = {
   },
 
   addEventListener() {
-    // console.log('addEventListener');
-
     // add event listener to splash button
     this.splashBtn.addEventListener('click', () => {
       this.splashScreen.classList.add("hidden");
@@ -35,9 +33,7 @@ const App = {
     });
   },
 
-  onoff(){
-    console.log('on off test');
-
+  toggle(){
     // update model visibility with setAttribute
     // add event listener to filters
     this.filter1.addEventListener('click', () => {
@@ -88,11 +84,3 @@ const App = {
 };
 
 App.init();
-
-
-// currentvalue = document.getElementById('onoff').value;
-// if(currentvalue == "Off"){
-//   document.getElementById("onoff").value="On";
-// }else{
-//   document.getElementById("onoff").value="Off";
-// }
